@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy the static files (in this case, just index.html) to the container
-COPY ./index.html /usr/share/nginx/html/
+COPY . /usr/share/nginx/html/
 
 # Expose the default Nginx port (4000)
 EXPOSE 4000
